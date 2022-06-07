@@ -1,7 +1,7 @@
 {
     "name": "custom-journal",
     "description": "A Ghost theme",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "engines": {
         "ghost": ">=4.0.0"
     },
@@ -53,6 +53,9 @@
             "show_memberships": {
                 "type": "boolean",
                 "default": false
+            },
+            "bio_hero_image": {
+                "type": "image"
             }
         }
     }
