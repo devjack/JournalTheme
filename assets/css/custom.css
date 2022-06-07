@@ -1,3 +1,7 @@
+/* Hide links to the portal just generally */
+a[href*="#/portal"] {
+    display: none;
+}
 
 .hero {
     display: grid;
