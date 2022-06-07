@@ -1,5 +1,5 @@
 {
-    "name": "journal",
+    "name": "custom-journal",
     "description": "A Ghost theme",
     "version": "1.0.0",
     "engines": {
@@ -49,6 +49,10 @@
                 "type": "select",
                 "options": ["Modern sans-serif", "Elegant serif"],
                 "default": "Modern sans-serif"
+            },
+            "show_memberships": {
+                "type": "boolean",
+                "default": false
             }
         }
     }
