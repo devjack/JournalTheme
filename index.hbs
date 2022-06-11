@@ -83,6 +83,7 @@
                 {{/get}}
 
                 {{#get "tags" include="count.posts" limit="all" as |topic|}}
+                    {{#match posts.length ">" 0}}
                     <section class="gh-section">
                         <h3 class="gh-section-title">Topics</h3>
 
@@ -97,6 +98,7 @@
                             {{/foreach}}
                         </div>
                     </section>
+                    {{/match}}
                 {{/get}}
             </aside>
         </div>
