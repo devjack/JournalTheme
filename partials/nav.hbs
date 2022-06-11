@@ -1,0 +1,18 @@
+<div class="gh-head-inner gh-inner">
+    <div class="gh-head-brand">
+        <a class="gh-head-logo" href="{{@site.url}}">
+            {{#if @site.logo}}
+            <img src="{{@site.logo}}" alt="{{@site.title}}">
+            {{else}}
+                {{#if @custom.show_fallback_site_title}}
+                {{@site.title}}
+                {{/if}}
+            {{/if}}
+        </a>
+        <button class="gh-burger"></button>
+    </div>
+
+    <nav class="gh-head-menu">
+        {{navigation}}
+    </nav>
+</div>

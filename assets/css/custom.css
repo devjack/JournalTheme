@@ -29,6 +29,28 @@ a[href*="#/portal"] {
     margin-top: 0.5rem;
 }
 
+.gh-head .gh-inner {
+    display: flex; /* override grid */
+    justify-content: space-between;
+}
+
+.gh-head .nav li+li {
+    margin-left: calc(var(--head-nav-gap) * 1.5);
+}
+
+.gh-head-menu .nav li a {
+    font-size: 2.0rem;
+    line-height: 2.0rem;
+    font-weight: 400;
+    letter-spacing: .01em;
+    text-transform:none;
+    color:#6b7280;   
+}
+.gh-head-menu:after, .gh-head-menu:before {
+    /* remove lines */
+    display: none;
+}
+
 .cta-button {
 
 }

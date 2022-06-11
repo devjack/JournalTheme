@@ -54,6 +54,10 @@
                 "type": "boolean",
                 "default": false
             },
+            "show_fallback_site_title": {
+                "type": "boolean",
+                "default": false
+            },
             "bio_hero_image": {
                 "type": "image"
             },
