@@ -33,6 +33,12 @@ a[href*="#/portal"] {
     box-shadow: 0 4px 7px 0 #E5E7EB;
 }
 
+.smaller-title {
+    font-size: 5rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
 .hero {
     display: grid;
     grid-template-columns: repeat(2,minmax(0,1fr));
@@ -293,5 +299,13 @@ a[href*="#/portal"] {
     }
     .recent-work-section>div>div:last-child {
         margin-top:inherit;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
