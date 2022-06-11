@@ -4,15 +4,14 @@
     <div class="gh-inner ">
         
         {{> "hero"}}
-     
 
         <div class="gh-wrapper">
             <section class="gh-section">
-                <h2 class="gh-section-title">More posts</h2>
+                <h2 class="gh-section-title">Recent Writing</h2>
 
                 <div class="gh-feed">
                     {{^is "paged"}}
-                        {{#foreach posts from="2"}}
+                        {{#foreach posts from="1"}}
                             {{> loop}}
                         {{/foreach}}
                     {{else}}
@@ -22,7 +21,7 @@
                     {{/is}}
                 </div>
 
-                {{#match posts.length "=" 1}}
+                {{#match posts.length "=" 0}}
                     More posts will be published soon.
                 {{/match}}
 
