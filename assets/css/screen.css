@@ -482,31 +482,6 @@
     margin-left: 0.8rem;
 }
 
-.hero {
-    display: grid;
-    grid-template-columns: 2;
-}
-.hero-content {
-    max-width: 60%;
-}
-.hero-image {
-    max-width: 24rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-.hero-image-box {
-    position: relative;
-    border: solid var(--ghost-accent-color);
-    border-width: 8px;
-    margin-top: 2rem;
-    margin-left: 2rem;
-}
-.hero-image-box img {
-    position: relative;
-    width: 48rem;
-    top: -2rem;
-    left: -2rem;
-}
 
 @media (max-width: 767px) {
     .gh-latest {
@@ -616,10 +591,6 @@
 
     .gh-head-menu::after {
         top: 136px;
-    }
-
-    .hero-image {
-        max-width: 28rem;
     }
 }
 
