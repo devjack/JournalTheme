@@ -46,6 +46,80 @@ a[href*="#/portal"] {
     left: -2rem;
 }
 
+.cto-advisor-section {
+    background-color: #f9fafb;
+
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    /* sm:px-6 lg:pb-12 lg:px-8 */
+}
+.cto-advisor-section>div {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+}
+.cto-advisor-section h2 {
+    line-height: 2rem;
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #111827;
+}
+.cto-advisor-section h2+p {
+    margin-top: 4rem;
+    font-size: var(--content-font-size,1.8rem);
+    letter-spacing: var(--content-letter-spacing,0);
+    /* font-size: 1.9rem;
+    line-height: 2.2rem; */
+    color: #6b7280;
+}
+
+.cto-advisor-section dl {
+    margin-top: 3rem;
+    display: grid;
+
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    row-gap: 4rem;
+}
+.cto-advisor-section dl .services-list-item {
+    display: flex;
+    /* space-x-3 */
+}
+.cto-advisor-section dl .services-list-item>div {
+    margin-left: 0.75rem;
+    /* space-y-2    */
+}
+.cto-advisor-section dl .services-list-item dt {
+    font-size: 1.9rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    color: #111827;
+    padding-bottom: 1rem;
+}
+.cto-advisor-section dl .services-list-item dd {
+    display: flex;
+    /* flex space-x-3 lg:py-0 lg:pb-4 */
+}
+.cto-advisor-section dl .services-list-item dd span {
+    font-size: 1.7rem;
+    line-height: 2.3rem;
+    color: #6b7280;
+}
+.cto-advisor-section .buzzword-bingo {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    color: #6b7280;
+    /* mt-4 text-sm text-gray-500 */
+}
+
+
 @media (max-width: 767px) {
     .hero {
         display: block;
@@ -55,5 +129,12 @@ a[href*="#/portal"] {
 @media (min-width: 992px) {
     .hero-image {
         max-width: 28rem;
+    }
+    .cto-advisor-section dl {
+        grid-template-columns: repeat(3,minmax(0,1fr));
+        row-gap: 8rem;
+    }
+    .cto-advisor-section dl .services-list-item dt {
+        /* padding-bottom: 1rem; */
     }
 }
