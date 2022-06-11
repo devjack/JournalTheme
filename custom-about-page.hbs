@@ -35,6 +35,7 @@
                 {{content}}
             </div>
             <div class="sidebar">
+                {{#if @custom.bio_hero_image}}
                 <div class="hero-image-box">
                     <img class=""
                         srcset="{{img_url @custom.bio_hero_image size="s"}} 300w,
@@ -46,6 +47,7 @@
                         alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}"
                     />
                 </div>
+                {{/if}}
             </div>
         </div>
         {{> cto-advisor}}
