@@ -2,6 +2,21 @@
 a[href*="#/portal"] {
     display: none;
 }
+.gh-article-footer {
+    border: none;
+}
+.sr-only {
+    /* helper based on Tailwind CSS */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+}
 .feature-heading {
     font-size: 1.9rem;
     line-height: 1.7rem;
@@ -254,6 +269,40 @@ a[href*="#/portal"] {
 .logo-cloud div:nth-child(odd):last-child {
     /* if the list is odd, make the last item double width. */
     grid-column: span 2 / span 2;
+}
+
+footer.gh-foot {
+    background-color: #f9fafb;
+    padding-top: 4rem;
+    padding-bottom:4rem;
+}
+footer.gh-foot .social-list {
+    display: flex;
+    justify-content: center;
+}
+footer.gh-foot .social-list a {
+    color: var(--color-secondary-text);
+    font-size: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+footer.gh-foot .social-list svg {
+    height: 3rem;
+    width: 3rem;
+}
+footer.gh-foot p {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.7rem;
+    line-height: 1.8rem;
+    color: var(--color-secondary-text);
+}
+.gh-copyright {
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    line-height: 1.8rem;
+    color: var(--color-secondary-text);
+    text-align: right;
 }
 
 
