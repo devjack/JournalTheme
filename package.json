@@ -56,6 +56,9 @@
             },
             "bio_hero_image": {
                 "type": "image"
+            },
+            "contact_form_url": {
+                "type": "text"
             }
         }
     }
