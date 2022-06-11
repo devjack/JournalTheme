@@ -17,6 +17,13 @@ a[href*="#/portal"] {
     white-space: nowrap;
     border-width: 0;
 }
+sub, sup {
+    top: -.5em;
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
 .feature-heading {
     font-size: 1.9rem;
     line-height: 1.7rem;
