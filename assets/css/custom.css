@@ -51,6 +51,14 @@ a[href*="#/portal"] {
     display: none;
 }
 
+.is-head-open #gh-head .gh-head-inner {
+    /* For when the nav bar is 'open' on mobiles */
+    display: flex; /* override grid */
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+}
+
 .cta-button {
 
 }
